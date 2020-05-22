@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Ukelele React Module
 
-## Available Scripts
+![Ukelele](http://jordillobet.es/projects/ukelele-react-module/ukelele.gif)
 
-In the project directory, you can run:
+This is a very basic react module that generates the headstock and the strings of an Ukelele in svg. It can also build a chord using the `chord` parameter when it gets created.
 
-### `yarn start`
+### How to use
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+After importing the files to your code, you can do two different thigs:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. Load a chord from ukelele.js
 
-### `yarn test`
+```
+render() {
+  return(
+    <Ukelele chord={'A'}/>
+    <Ukelele chord={'Cm'}/>
+  )
+}
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Load your own chord.
 
-### `yarn build`
+The chords are structured as arrays of finger positions. So, imagine the chord you want to show is string 1 and 2, from the 2nd fret and using the finger 1 (index):
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+let myChord = [{
+    string: [1, 2],
+    fret: 2,
+    fingerId: 1
+}];
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+For adding more fingers in the chord you'll need to add just another object next to the chord. For example if adding a new note using the middle finger (fingerId = 2) for pressing the 3th string from the 3th fret, it would be like this:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+let myChord = [{
+    string: [1,2],
+    fret: 2,
+    fingerId: 1
+},{
+    string: [3],
+    fret: 3,
+    fingerId: 2
+}];
+```
 
-### `yarn eject`
+Finally you could send this to the component: (this is just an example, actually it'd sound really bad...)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+<Ukelele chord={myChord}/>
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Credits
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Jordi Llobet | @newpatriks
