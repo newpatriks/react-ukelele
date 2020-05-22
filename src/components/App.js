@@ -15,9 +15,6 @@ function App() {
         })}
       </select>
       <Ukelele chord={currentChord} width={400} height={200} />
-
-
-      <Ukelele chord={'Cm'} width={400} height={200} />
     </div>
   );
 }
