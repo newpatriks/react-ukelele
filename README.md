@@ -1,8 +1,7 @@
 ## Ukelele React Module
 
-<center>
-<img src="http://jllobet.me/wp-content/uploads/2019/04/ukelele-500x500.png" />
-  </center>
+
+<img src="http://jllobet.me/wp-content/uploads/2020/05/react-ukelele.gif" width="350px" />
 
 This is a very basic react module that generates the headstock and the strings of an Ukelele in svg. It can also build a chord using the `chord` parameter when it gets created.
 
