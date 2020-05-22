@@ -1,15 +1,15 @@
-## Ukelele React Module
+# Ukelele React Module
 
 
 <img src="http://jllobet.me/wp-content/uploads/2020/05/react-ukelele.gif" width="350px" />
 
 This is a very basic react module that generates the headstock and the strings of an Ukelele in svg. It can also build a chord using the `chord` parameter when it gets created.
 
-### How to use
+## How to use
 
 After importing the files to your code, you can do two different thigs:
 
-1. Load a chord from ukelele.js
+### 1. Load a chord from ukelele.js
 
 ```
 render() {
@@ -20,7 +20,7 @@ render() {
 }
 ```
 
-2. Load your own chord.
+### 2. Load your own chord.
 
 The chords are structured as arrays of finger positions. So, imagine the chord you want to show is string 1 and 2, from the 2nd fret and using the finger 1 (index):
 
@@ -46,10 +46,15 @@ let myChord = [{
 }];
 ```
 
-Finally you could send this to the component: (this is just an example, actually it'd sound really bad...)
+### 3. Render the component
 
 ```
 <Ukelele chord={myChord}/>
+```
+
+Or you could also reder any existing chord you want: 
+```
+<Ukelele chord='C' width={400} height={200} />
 ```
 
 ### Credits
