@@ -7,56 +7,56 @@
 
 This is a very basic react module that generates the headstock and the strings of an Ukelele in svg. It can also build a chord using the `chord` parameter when it gets created.
 
+## Install
+
+```
+npm install react-ukelele
+```
+
 ## How to use
-
-After importing the files to your code, you can do two different thigs:
-
-### 1. Load a chord from ukelele.js
+For render the component you just need to pass the `chord` prop. The list of chords available can be seen in [here](https://github.com/newpatriks/ukelele/blob/master/src/ukelele-chords.js)
 
 ```
 render() {
   return(
     <Ukelele chord={'A'}/>
-    <Ukelele chord={'Cm'}/>
   )
 }
 ```
 
-### 2. Load your own chord.
+## Want more?
+For adding more chords (or customized ones) you can do so by updating the chord list mentioned above. The structure is the following:
 
-The chords are structured as arrays of finger positions. So, imagine the chord you want to show is string 1 and 2, from the 2nd fret and using the finger 1 (index):
+A `chord` contains a list of fingers, and each one of the fingers can take 1 or more strings. The strings go from 1(highest) to 4(lowest).
+
+So the `C` chord would be like this: 
 
 ```
-let myChord = [{
-    string: [1, 2],
+C : [{
+  string [1],
+  fret: 2,
+  fingerId: 1 // this can vary depending on the user
+}]
+```
+
+A more complex chord like `G` (which it takes 3 fingers, each one in a different string):
+
+```
+G: [{
+    string: [1],
     fret: 2,
     fingerId: 1
-}];
-```
-
-For adding more fingers in the chord you'll need to add just another object next to the chord. For example if adding a new note using the middle finger (fingerId = 2) for pressing the 3th string from the 3th fret, it would be like this:
-
-```
-let myChord = [{
-    string: [1,2],
-    fret: 2,
-    fingerId: 1
-},{
+  },
+  {
     string: [3],
-    fret: 3,
+    fret: 2,
     fingerId: 2
-}];
-```
-
-### 3. Render the component
-
-```
-<Ukelele chord={myChord}/>
-```
-
-Or you could also reder any existing chord you want: 
-```
-<Ukelele chord='C' width={400} height={200} />
+  },
+  {
+    string: [2],
+    fret: 3,
+    fingerId: 3
+  }],
 ```
 
 ### Credits
