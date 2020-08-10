@@ -238,6 +238,23 @@ export const CHORDS = {
       fingerId: 4
     }
   ],
+  'F#': [
+    {
+      string: [1, 3],
+      fret: 1,
+      fingerId: 1
+    },
+    {
+      string: [2],
+      fret: 2,
+      fingerId: 2
+    },
+    {
+      string: [4],
+      fret: 3,
+      fingerId: 3
+    }
+  ],
   G: [
     {
       string: [1],
