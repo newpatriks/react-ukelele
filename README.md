@@ -1,6 +1,6 @@
 # Ukelele React Module
 
-[Live example here](https://fervent-meninsky-f0d937.netlify.app/)
+[Live example here](https://upbeat-mccarthy-d9d9b5.netlify.app/chords/A)
 
 
 <img src="http://jllobet.me/wp-content/uploads/2020/05/react-ukelele.gif" width="350px" />
