@@ -27,7 +27,6 @@ function Ukelele(props) {
   ];
 
   let circleComponents = [];
-  let chordSchema;
   if (chordExist) {
     const chordSchema = CHORDS[chord]
     chordSchema.forEach(function (finger) {
@@ -57,6 +56,8 @@ function Ukelele(props) {
       </svg>
     );
   }
+
+  return null;
 }
 
 Ukelele.defaultProps = {
