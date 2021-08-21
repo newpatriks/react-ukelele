@@ -90,6 +90,18 @@ export const CHORDS = {
       fingerId: 1
     }
   ],
+  Csus4: [
+    {
+      string: [1],
+      fret: 3,
+      fingerId: 1
+    },
+    {
+      string: [2],
+      fret: 1,
+      fingerId: 2
+    }
+  ],
   D: [
     {
       string: [2],
@@ -304,6 +316,18 @@ export const CHORDS = {
       string: [1],
       fret: 2,
       fingerId: 3
+    }
+  ],
+  G6: [
+    {
+      string: [1],
+      fret: 2,
+      fingerId: 1
+    },
+    {
+      string: [3],
+      fret: 2,
+      fingerId: 2
     }
   ]
 };
