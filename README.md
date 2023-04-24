@@ -19,7 +19,7 @@ For render the component you just need to pass the `chord` prop. The list of cho
 ```
 render() {
   return(
-    <Ukelele chord={'A'}/>
+    <Ukelele chord={'Amaj'}/>
   )
 }
 ```
@@ -32,17 +32,17 @@ A `chord` contains a list of fingers, and each one of the fingers can take 1 or 
 So the `C` chord would be like this: 
 
 ```
-C : [{
+Cmaj : [{
   string [1],
   fret: 2,
   fingerId: 1 // this can vary depending on the user
 }]
 ```
 
-A more complex chord like `G` (which it takes 3 fingers, each one in a different string):
+A more complex chord like `Gmaj` (which it takes 3 fingers, each one in a different string):
 
 ```
-G: [{
+Gmaj: [{
     string: [1],
     fret: 2,
     fingerId: 1
