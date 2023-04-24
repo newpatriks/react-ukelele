@@ -2,7 +2,7 @@ export const VERTICAL_OFFSET = 50;
 export const HEAD_STOCK_OFFSET = 10;
 
 export const CHORDS = {
-  A: [
+  Amaj: [
     {
       string: [3],
       fret: 1,
@@ -14,7 +14,7 @@ export const CHORDS = {
       fingerId: 2
     }
   ],
-  Am: [
+  Amin: [
     {
       string: [4],
       fret: 2,
@@ -28,7 +28,7 @@ export const CHORDS = {
       fingerId: 1
     }
   ],
-  B: [
+  Bmaj: [
     {
       string: [1, 2],
       fret: 2,
@@ -45,7 +45,7 @@ export const CHORDS = {
       fingerId: 3
     }
   ],
-  Bm: [
+  Bmin: [
     {
       string: [1, 2, 3],
       fret: 2,
@@ -69,14 +69,14 @@ export const CHORDS = {
       fingerId: 2
     }
   ],
-  C: [
+  Cmaj: [
     {
       string: [1],
       fret: 3,
       fingerId: 1
     }
   ],
-  Cm: [
+  Cmin: [
     {
       string: [1, 2, 3],
       fret: 3,
@@ -90,7 +90,7 @@ export const CHORDS = {
       fingerId: 1
     }
   ],
-  D: [
+  Dmaj: [
     {
       string: [2],
       fret: 2,
@@ -107,7 +107,7 @@ export const CHORDS = {
       fingerId: 3
     }
   ],
-  Dm: [
+  Dmin: [
     {
       string: [2],
       fret: 1,
@@ -136,7 +136,7 @@ export const CHORDS = {
       fingerId: 3
     }
   ],
-  E: [
+  Emaj: [
     {
       string: [4],
       fret: 1,
@@ -153,7 +153,7 @@ export const CHORDS = {
       fingerId: 4
     }
   ],
-  Em: [
+  Emin: [
     {
       string: [1],
       fret: 2,
@@ -187,7 +187,7 @@ export const CHORDS = {
       fingerId: 3
     }
   ],
-  F: [
+  Fmaj: [
     {
       string: [2],
       fret: 1,
@@ -199,7 +199,7 @@ export const CHORDS = {
       fingerId: 2
     }
   ],
-  Fm: [
+  Fmin: [
     {
       string: [2],
       fret: 1,
@@ -255,7 +255,7 @@ export const CHORDS = {
       fingerId: 3
     }
   ],
-  G: [
+  Gmaj: [
     {
       string: [1],
       fret: 2,
@@ -272,7 +272,7 @@ export const CHORDS = {
       fingerId: 3
     }
   ],
-  Gm: [
+  Gmin: [
     {
       string: [1],
       fret: 1,
