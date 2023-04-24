@@ -14,7 +14,7 @@ export const CHORDS = {
       fingerId: 2
     }
   ],
-  Amin: [
+  Am: [
     {
       string: [4],
       fret: 2,
@@ -45,7 +45,7 @@ export const CHORDS = {
       fingerId: 3
     }
   ],
-  Bmin: [
+  Bm: [
     {
       string: [1, 2, 3],
       fret: 2,
@@ -76,7 +76,7 @@ export const CHORDS = {
       fingerId: 1
     }
   ],
-  Cmin: [
+  Cm: [
     {
       string: [1, 2, 3],
       fret: 3,
@@ -107,7 +107,7 @@ export const CHORDS = {
       fingerId: 3
     }
   ],
-  Dmin: [
+  Dm: [
     {
       string: [2],
       fret: 1,
@@ -153,7 +153,7 @@ export const CHORDS = {
       fingerId: 4
     }
   ],
-  Emin: [
+  Em: [
     {
       string: [1],
       fret: 2,
@@ -199,7 +199,7 @@ export const CHORDS = {
       fingerId: 2
     }
   ],
-  Fmin: [
+  Fm: [
     {
       string: [2],
       fret: 1,
@@ -272,7 +272,7 @@ export const CHORDS = {
       fingerId: 3
     }
   ],
-  Gmin: [
+  Gm: [
     {
       string: [1],
       fret: 1,
