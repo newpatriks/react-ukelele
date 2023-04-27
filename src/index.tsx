@@ -1,8 +1,5 @@
-import {
-  VERTICAL_OFFSET,
-  HEAD_STOCK_OFFSET,
-  CHORDS,
-} from "./constants/ukelele-chords";
+import { VERTICAL_OFFSET, HEAD_STOCK_OFFSET } from "./constants/ukelele-chords";
+import CHORDS from "./constants/chords";
 import UkeNut from "./UkeNut";
 import UkeStrings from "./UkeStrings";
 import UkeFrets from "./UkeFrets";
