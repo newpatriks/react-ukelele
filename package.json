@@ -14,7 +14,7 @@
     "name": "Jordi Llobet",
     "url": "http://jllobet.me"
   },
-  "main": "index.js",
+  "main": "src/index",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
