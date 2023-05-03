@@ -1,5 +1,6 @@
 {
   "name": "react-ukelele",
+  "type": "module",
   "version": "0.4.4",
   "description": "Small add-on to add svg ukelele chords into your app",
   "keywords": [
@@ -14,7 +15,17 @@
     "name": "Jordi Llobet",
     "url": "http://jllobet.me"
   },
-  "main": "src/index",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/react-ukelele.umd.js",
+  "module": "./dist/react-ukelele.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-ukelele.js",
+      "require": "./dist/react-ukelele.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -26,10 +37,12 @@
     "url": "https://github.com/newpatriks/ukelele"
   },
   "dependencies": {
+    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/node": "^18.16.3",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
