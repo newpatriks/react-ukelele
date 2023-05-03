@@ -71,3 +71,16 @@ export const Dmaj7: chordType[] = [
     fingerId: 3,
   },
 ];
+
+export const Dsus4: chordType[] = [
+  {
+    string: [3],
+    fret: 2,
+    fingerId: 1,
+  },
+  {
+    string: [2],
+    fret: 3,
+    fingerId: 3,
+  },
+];

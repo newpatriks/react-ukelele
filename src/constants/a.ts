@@ -30,3 +30,11 @@ export const Amaj7: chordType[] = [
     fingerId: 1,
   },
 ];
+
+export const A7sus4: chordType[] = [
+  {
+    string: [3],
+    fret: 2,
+    fingerId: 2,
+  },
+];

@@ -53,3 +53,16 @@ export const Emaj7: chordType[] = [
     fingerId: 3,
   },
 ];
+
+export const Em7: chordType[] = [
+  {
+    string: [3],
+    fret: 2,
+    fingerId: 2,
+  },
+  {
+    string: [1],
+    fret: 2,
+    fingerId: 3,
+  },
+];

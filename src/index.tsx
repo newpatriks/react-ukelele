@@ -9,12 +9,14 @@ type Props = {
   chord: string;
   width?: number;
   height?: number;
+  showLabel?: boolean;
 };
 
 export default function Ukelele({
   chord = "A",
   width = 300,
   height = 300,
+  showLabel = true,
 }: Props) {
   const chordExist = Boolean(CHORDS[chord]);
   let fretWidth = width / 5 || 550;
@@ -56,6 +58,11 @@ export default function Ukelele({
 
     return (
       <svg width={width} height={height} id="svgOne">
+        {showLabel && (
+          <text x="20" y="30">
+            {chord}
+          </text>
+        )}
         <UkeNut
           stringYPosition={stringYPosition[0]}
           stringHeight={stringHeight}

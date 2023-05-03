@@ -23,3 +23,16 @@ export const Cmaj7: chordType[] = [
     fingerId: 1,
   },
 ];
+
+export const Cadd9: chordType[] = [
+  {
+    string: [3],
+    fret: 2,
+    fingerId: 1,
+  },
+  {
+    string: [1],
+    fret: 3,
+    fingerId: 3,
+  },
+];
