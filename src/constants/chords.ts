@@ -1,6 +1,6 @@
 import { chordsType } from "./types";
 import { Amaj, Am, Am7, Amaj7, A7sus4 } from "./a";
-import { Bmaj, Bm, Bmaj7 } from "./b";
+import { Bmaj, Bm, Bmaj7, Bb } from "./b";
 import { Cmaj, Cm, Cmaj7, Cadd9 } from "./c";
 import { Dmaj, Dm, Dm7, Dmaj7, Dsus4 } from "./d";
 import { Emaj, Em, Em7, Emaj7 } from "./e";
@@ -20,6 +20,7 @@ const CHORDS: chordsType = {
   B7: Bmaj7,
   Bmaj7,
   Bm,
+  Bb,
   C: Cmaj,
   Cmaj,
   C7: Cmaj7,

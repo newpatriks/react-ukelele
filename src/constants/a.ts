@@ -13,6 +13,19 @@ export const Amaj: chordType[] = [
   },
 ];
 
+export const Amaj7: chordType[] = [
+  {
+    string: [3],
+    fret: 1,
+    fingerId: 1,
+  },
+  {
+    string: [4],
+    fret: 1,
+    fingerId: 2,
+  },
+];
+
 export const Am: chordType[] = [
   {
     string: [4],
@@ -22,14 +35,6 @@ export const Am: chordType[] = [
 ];
 
 export const Am7: chordType[] = [];
-
-export const Amaj7: chordType[] = [
-  {
-    string: [3],
-    fret: 1,
-    fingerId: 1,
-  },
-];
 
 export const A7sus4: chordType[] = [
   {

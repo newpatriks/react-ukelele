@@ -43,3 +43,21 @@ export const Bmaj7: chordType[] = [
     fingerId: 2,
   },
 ];
+
+export const Bb: chordType[] = [
+  {
+    string: [1, 2],
+    fret: 1,
+    fingerId: 1,
+  },
+  {
+    string: [3],
+    fret: 2,
+    fingerId: 2,
+  },
+  {
+    string: [4],
+    fret: 3,
+    fingerId: 3,
+  },
+];
