@@ -18,12 +18,12 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/react-ukelele.umd.js",
+  "main": "./dist/react-ukelele.umd.cjs",
   "module": "./dist/react-ukelele.js",
   "exports": {
     ".": {
       "import": "./dist/react-ukelele.js",
-      "require": "./dist/react-ukelele.umd.js"
+      "require": "./dist/react-ukelele.umd.cjs"
     }
   },
   "scripts": {
