@@ -13,6 +13,16 @@ This is a very basic react module that generates the headstock and the strings o
 npm install react-ukelele
 ```
 
+## Development
+
+Run the following commands to check the codebase:
+
+```bash
+npm run type-check    # validate TypeScript types
+npm run lint          # run eslint
+npm run build         # generate production build
+```
+
 ## How to use
 **To render** the component you just need to pass the `chord` prop. The list of chords available can be seen in [here](https://github.com/newpatriks/ukelele/blob/master/src/ukelele-chords.js)
 
