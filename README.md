@@ -14,7 +14,7 @@ npm install react-ukelele
 ```
 
 ## How to use
-For render the component you just need to pass the `chord` prop. The list of chords available can be seen in [here](https://github.com/newpatriks/ukelele/blob/master/src/ukelele-chords.js)
+For render the component you just need to pass the `chord` prop. The list of chords available can be seen in [here](https://github.com/newpatriks/ukelele/blob/master/src/constants/chords.ts)
 
 ```
 render() {
