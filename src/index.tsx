@@ -68,7 +68,7 @@ export default function Ukelele({
       />
       <UkeStrings stringYPosition={stringYPosition} width={width} />
       <UkeFrets fretXPosition={fretXPosition} stringHeight={stringHeight} />
-      {...circleComponents}
+      {circleComponents}
     </svg>
   );
 }
