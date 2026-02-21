@@ -1336,7 +1336,6 @@ function Ke({
     {
       width: u,
       height: O,
-      id: "svgOne",
       role: "img",
       "aria-label": `${s} chord diagram`,
       children: [
