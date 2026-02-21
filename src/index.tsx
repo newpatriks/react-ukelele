@@ -56,7 +56,14 @@ export default function Ukelele({
   });
 
   return (
-    <svg width={width} height={height} id="svgOne">
+    <svg
+      width={width}
+      height={height}
+      id="svgOne"
+      role="img"
+      aria-label={`${chord} chord diagram`}
+    >
+      <title>{chord} chord diagram</title>
       {showLabel && (
         <text x="20" y="30">
           {chord}
