@@ -24,6 +24,15 @@ export const Cmaj7: chordType[] = [
   },
 ];
 
+// Cm7: barre all 4 strings at fret 3 → Bb-Eb-G-C (C-Eb-G-Bb in any order)
+export const Cm7: chordType[] = [
+  {
+    string: [1, 2, 3, 4],
+    fret: 3,
+    fingerId: 1,
+  },
+];
+
 export const Cadd9: chordType[] = [
   {
     string: [3],
