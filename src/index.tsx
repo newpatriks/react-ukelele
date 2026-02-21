@@ -59,7 +59,6 @@ export default function Ukelele({
     <svg
       width={width}
       height={height}
-      id="svgOne"
       role="img"
       aria-label={`${chord} chord diagram`}
     >
