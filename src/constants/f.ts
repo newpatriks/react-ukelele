@@ -52,6 +52,25 @@ export const Fmaj7: chordType[] = [
   },
 ];
 
+// F#m: 2-1-2-open (strings 4-3-2-1) → A-C#-F#-A (F#-A-C#)
+export const Fsharpminor: chordType[] = [
+  {
+    string: [3],
+    fret: 1,
+    fingerId: 1,
+  },
+  {
+    string: [4],
+    fret: 2,
+    fingerId: 2,
+  },
+  {
+    string: [2],
+    fret: 2,
+    fingerId: 3,
+  },
+];
+
 export const Fsharp: chordType[] = [
   {
     string: [1, 3],

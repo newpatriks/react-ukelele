@@ -1,11 +1,11 @@
 import { chordsType } from "./types";
 import { Amaj, Am, Am7, Amaj7, A7sus4 } from "./a";
-import { Bmaj, Bm, Bmaj7, Bb } from "./b";
-import { Cmaj, Cm, Cmaj7, Cadd9 } from "./c";
+import { Bmaj, Bm, Bm7, Bmaj7, Bb } from "./b";
+import { Cmaj, Cm, Cm7, Cmaj7, Cadd9 } from "./c";
 import { Dmaj, Dm, Dm7, Dmaj7, Dsus4 } from "./d";
 import { Emaj, Em, Em7, Emaj7 } from "./e";
-import { Fmaj, Fm, Fmaj7, Fsharp } from "./f";
-import { Gmaj, Gm, Gmaj7 } from "./g";
+import { Fmaj, Fm, Fmaj7, Fsharp, Fsharpminor } from "./f";
+import { Gmaj, Gm, Gm7, Gmaj7 } from "./g";
 
 const CHORDS: chordsType = {
   // A
@@ -45,6 +45,10 @@ const CHORDS: chordsType = {
   "B Minor": Bm,
   Sim: Bm,
   //
+  Bm7,
+  "B Minor 7": Bm7,
+  Sim7: Bm7,
+  //
   Bb,
   "B flat": Bb,
   "Si bemol": Bb,
@@ -62,6 +66,10 @@ const CHORDS: chordsType = {
   Cm,
   "C Minor": Cm,
   Dom: Cm,
+  //
+  Cm7,
+  "C Minor 7": Cm7,
+  Dom7: Cm7,
   //
   Cadd9,
   "C add 9": Cadd9,
@@ -123,6 +131,11 @@ const CHORDS: chordsType = {
   "Fa# Major": Fsharp,
   "Fa# Maj": Fsharp,
   //
+  "F#m": Fsharpminor,
+  "F# Minor": Fsharpminor,
+  "F# minor": Fsharpminor,
+  "Fa#m": Fsharpminor,
+  //
   Fm,
   "F Minor": Fm,
   Fam: Fm,
@@ -135,6 +148,10 @@ const CHORDS: chordsType = {
   Gm,
   "G Minor": Gm,
   Solm: Gm,
+  //
+  Gm7,
+  "G Minor 7": Gm7,
+  Solm7: Gm7,
   //
   G7: Gmaj7,
   Gmaj7,
