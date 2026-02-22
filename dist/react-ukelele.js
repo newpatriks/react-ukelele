@@ -14,7 +14,7 @@ function Ve() {
   if (ie)
     return L;
   ie = 1;
-  var s = se, u = Symbol.for("react.element"), O = Symbol.for("react.fragment"), T = Object.prototype.hasOwnProperty, M = s.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, E = { key: !0, ref: !0, __self: !0, __source: !0 };
+  var s = se, u = Symbol.for("react.element"), S = Symbol.for("react.fragment"), T = Object.prototype.hasOwnProperty, M = s.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, E = { key: !0, ref: !0, __self: !0, __source: !0 };
   function R(j, d, k) {
     var v, y = {}, _ = null, F = null;
     k !== void 0 && (_ = "" + k), d.key !== void 0 && (_ = "" + d.key), d.ref !== void 0 && (F = d.ref);
@@ -25,7 +25,7 @@ function Ve() {
         y[v] === void 0 && (y[v] = d[v]);
     return { $$typeof: u, type: j, key: _, ref: F, props: y, _owner: M.current };
   }
-  return L.Fragment = O, L.jsx = R, L.jsxs = R, L;
+  return L.Fragment = S, L.jsx = R, L.jsxs = R, L;
 }
 var $ = {};
 /**
@@ -40,7 +40,7 @@ var $ = {};
 var ae;
 function Ye() {
   return ae || (ae = 1, process.env.NODE_ENV !== "production" && function() {
-    var s = se, u = Symbol.for("react.element"), O = Symbol.for("react.portal"), T = Symbol.for("react.fragment"), M = Symbol.for("react.strict_mode"), E = Symbol.for("react.profiler"), R = Symbol.for("react.provider"), j = Symbol.for("react.context"), d = Symbol.for("react.forward_ref"), k = Symbol.for("react.suspense"), v = Symbol.for("react.suspense_list"), y = Symbol.for("react.memo"), _ = Symbol.for("react.lazy"), F = Symbol.for("react.offscreen"), U = Symbol.iterator, fe = "@@iterator";
+    var s = se, u = Symbol.for("react.element"), S = Symbol.for("react.portal"), T = Symbol.for("react.fragment"), M = Symbol.for("react.strict_mode"), E = Symbol.for("react.profiler"), R = Symbol.for("react.provider"), j = Symbol.for("react.context"), d = Symbol.for("react.forward_ref"), k = Symbol.for("react.suspense"), v = Symbol.for("react.suspense_list"), y = Symbol.for("react.memo"), _ = Symbol.for("react.lazy"), F = Symbol.for("react.offscreen"), U = Symbol.iterator, fe = "@@iterator";
     function ue(r) {
       if (r === null || typeof r != "object")
         return null;
@@ -94,7 +94,7 @@ function Ye() {
       switch (r) {
         case T:
           return "Fragment";
-        case O:
+        case S:
           return "Portal";
         case E:
           return "Profiler";
@@ -129,7 +129,7 @@ function Ye() {
         }
       return null;
     }
-    var S = Object.assign, A = 0, Ar, Wr, Lr, $r, Br, Ur, Nr;
+    var O = Object.assign, A = 0, Ar, Wr, Lr, $r, Br, Ur, Nr;
     function Vr() {
     }
     Vr.__reactDisabledLog = !0;
@@ -156,7 +156,7 @@ function Ye() {
         A++;
       }
     }
-    function he() {
+    function be() {
       {
         if (A--, A === 0) {
           var r = {
@@ -165,25 +165,25 @@ function Ye() {
             writable: !0
           };
           Object.defineProperties(console, {
-            log: S({}, r, {
+            log: O({}, r, {
               value: Ar
             }),
-            info: S({}, r, {
+            info: O({}, r, {
               value: Wr
             }),
-            warn: S({}, r, {
+            warn: O({}, r, {
               value: Lr
             }),
-            error: S({}, r, {
+            error: O({}, r, {
               value: $r
             }),
-            group: S({}, r, {
+            group: O({}, r, {
               value: Br
             }),
-            groupCollapsed: S({}, r, {
+            groupCollapsed: O({}, r, {
               value: Ur
             }),
-            groupEnd: S({}, r, {
+            groupEnd: O({}, r, {
               value: Nr
             })
           });
@@ -207,8 +207,8 @@ function Ye() {
     }
     var lr = !1, V;
     {
-      var be = typeof WeakMap == "function" ? WeakMap : Map;
-      V = new be();
+      var he = typeof WeakMap == "function" ? WeakMap : Map;
+      V = new he();
     }
     function Yr(r, e) {
       if (!r || lr)
@@ -267,16 +267,16 @@ function Ye() {
               if (l !== 1 || c !== 1)
                 do
                   if (l--, c--, c < 0 || i[l] !== p[c]) {
-                    var h = `
+                    var b = `
 ` + i[l].replace(" at new ", " at ");
-                    return r.displayName && h.includes("<anonymous>") && (h = h.replace("<anonymous>", r.displayName)), typeof r == "function" && V.set(r, h), h;
+                    return r.displayName && b.includes("<anonymous>") && (b = b.replace("<anonymous>", r.displayName)), typeof r == "function" && V.set(r, b), b;
                   }
                 while (l >= 1 && c >= 0);
               break;
             }
         }
       } finally {
-        lr = !1, fr.current = f, he(), Error.prepareStackTrace = o;
+        lr = !1, fr.current = f, be(), Error.prepareStackTrace = o;
       }
       var P = r ? r.displayName || r.name : "", ne = P ? N(P) : "";
       return typeof r == "function" && V.set(r, ne), ne;
@@ -599,17 +599,17 @@ Check the top-level render call using <` + t + ">.");
         if (c == null)
           return c;
         if (a) {
-          var h = e.children;
-          if (h !== void 0)
+          var b = e.children;
+          if (b !== void 0)
             if (n)
-              if (cr(h)) {
-                for (var P = 0; P < h.length; P++)
-                  ee(h[P], r);
-                Object.freeze && Object.freeze(h);
+              if (cr(b)) {
+                for (var P = 0; P < b.length; P++)
+                  ee(b[P], r);
+                Object.freeze && Object.freeze(b);
               } else
                 m("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              ee(h, r);
+              ee(b, r);
         }
         return r === T ? Le(c) : We(c), c;
       }
@@ -626,7 +626,7 @@ Check the top-level render call using <` + t + ">.");
 }
 process.env.NODE_ENV === "production" ? Dr.exports = Ve() : Dr.exports = Ye();
 var g = Dr.exports;
-const b = 50, I = 10, pr = [
+const h = 50, I = 10, pr = [
   {
     string: [3],
     fret: 1,
@@ -676,7 +676,7 @@ const b = 50, I = 10, pr = [
     fret: 4,
     fingerId: 3
   }
-], hr = [
+], br = [
   {
     string: [1, 2, 3],
     fret: 2,
@@ -698,7 +698,7 @@ const b = 50, I = 10, pr = [
     fret: 3,
     fingerId: 2
   }
-], br = [
+], hr = [
   {
     string: [1, 2, 3, 4],
     fret: 2,
@@ -1062,13 +1062,13 @@ const b = 50, I = 10, pr = [
   "B Major 7": H,
   Si7: H,
   //
-  Bm: hr,
-  "B Minor": hr,
-  Sim: hr,
+  Bm: br,
+  "B Minor": br,
+  Sim: br,
   //
-  Bm7: br,
-  "B Minor 7": br,
-  Sim7: br,
+  Bm7: hr,
+  "B Minor 7": hr,
+  Sim7: hr,
   //
   Bb: Rr,
   "B flat": Rr,
@@ -1251,9 +1251,9 @@ function Je({ fretXPosition: s, stringHeight: u }) {
       "line",
       {
         x1: s[0],
-        y1: b,
+        y1: h,
         x2: s[0],
-        y2: u + b,
+        y2: u + h,
         stroke: "black",
         strokeWidth: 0.5
       },
@@ -1263,9 +1263,9 @@ function Je({ fretXPosition: s, stringHeight: u }) {
       "line",
       {
         x1: s[1],
-        y1: b,
+        y1: h,
         x2: s[1],
-        y2: u + b,
+        y2: u + h,
         stroke: "black",
         strokeWidth: 0.5
       },
@@ -1275,9 +1275,9 @@ function Je({ fretXPosition: s, stringHeight: u }) {
       "line",
       {
         x1: s[2],
-        y1: b,
+        y1: h,
         x2: s[2],
-        y2: u + b,
+        y2: u + h,
         stroke: "black",
         strokeWidth: 0.5
       },
@@ -1287,9 +1287,9 @@ function Je({ fretXPosition: s, stringHeight: u }) {
       "line",
       {
         x1: s[3],
-        y1: b,
+        y1: h,
         x2: s[3],
-        y2: u + b,
+        y2: u + h,
         stroke: "black",
         strokeWidth: 0.5
       },
@@ -1300,16 +1300,16 @@ function Je({ fretXPosition: s, stringHeight: u }) {
 function Ke({
   chord: s = "A",
   width: u = 300,
-  height: O = 300,
+  height: S = 300,
   showLabel: T = !0
 }) {
   if (!!!oe[s])
     return null;
-  let E = u / 5 || 550, R = O / 2 || 300, j = E / 6, d = [
-    b,
-    R / 3 + b,
-    R * 2 / 3 + b,
-    R + b
+  let E = u / 5 || 550, R = S / 2 || 300, j = E / 6, d = [
+    h,
+    R / 3 + h,
+    R * 2 / 3 + h,
+    R + h
   ], k = [
     E + I,
     E * 2 + I,
@@ -1335,7 +1335,8 @@ function Ke({
     "svg",
     {
       width: u,
-      height: O,
+      height: S,
+      viewBox: `0 0 ${u} ${S}`,
       role: "img",
       "aria-label": `${s} chord diagram`,
       children: [
