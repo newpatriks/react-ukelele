@@ -104,4 +104,4 @@ npm run build        # production build → dist/
 
 ## License
 
-MIT © [Jordi Llobet](http://jllobet.me)
+MIT © Jordi Llobet
