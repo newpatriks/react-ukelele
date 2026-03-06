@@ -3,9 +3,10 @@ import { HEAD_STOCK_OFFSET } from "./constants/ukelele-chords";
 type Props = {
   stringYPosition: number;
   stringHeight: number;
+  color: string;
 };
 
-export default function UkeNut({ stringYPosition, stringHeight }: Props) {
+export default function UkeNut({ stringYPosition, stringHeight, color }: Props) {
   return (
     <rect
       x={HEAD_STOCK_OFFSET}
@@ -13,7 +14,7 @@ export default function UkeNut({ stringYPosition, stringHeight }: Props) {
       width={HEAD_STOCK_OFFSET}
       height={stringHeight}
       fill="transparent"
-      stroke="black"
+      stroke={color}
       strokeWidth={1}
     />
   );

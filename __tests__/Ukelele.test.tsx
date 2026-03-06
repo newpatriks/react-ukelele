@@ -79,4 +79,28 @@ describe('Ukelele', () => {
     const { container } = render(<Ukelele chord="A" showLabel={false} />);
     expect(container.querySelector('text')).toBeNull();
   });
+
+  // ── darkMode prop ────────────────────────────────────────────────────────
+
+  it('uses black colors by default (light mode)', () => {
+    const { container } = render(<Ukelele chord="A" />);
+    const circles = container.querySelectorAll('circle');
+    circles.forEach((circle) => {
+      expect(circle.getAttribute('fill')).toBe('black');
+    });
+    const rect = container.querySelector('rect')!;
+    expect(rect.getAttribute('stroke')).toBe('black');
+  });
+
+  it('uses white colors when darkMode is true', () => {
+    const { container } = render(<Ukelele chord="A" darkMode />);
+    const circles = container.querySelectorAll('circle');
+    circles.forEach((circle) => {
+      expect(circle.getAttribute('fill')).toBe('white');
+    });
+    const rect = container.querySelector('rect')!;
+    expect(rect.getAttribute('stroke')).toBe('white');
+    const text = container.querySelector('text')!;
+    expect(text.getAttribute('fill')).toBe('white');
+  });
 });

@@ -10,6 +10,7 @@ type Props = {
   width?: number;
   height?: number;
   showLabel?: boolean;
+  darkMode?: boolean;
 };
 
 export default function Ukelele({
@@ -17,6 +18,7 @@ export default function Ukelele({
   width = 300,
   height = 300,
   showLabel = true,
+  darkMode = false,
 }: Props) {
   const chordExist = Boolean(CHORDS[chord]);
   if (!chordExist) return null;
@@ -24,6 +26,7 @@ export default function Ukelele({
   let fretWidth = width / 5 || 550;
   let stringHeight = height / 2 || 300;
   let circleRadius = fretWidth / 6;
+  const color = darkMode ? "white" : "black";
 
   let stringYPosition = [
     VERTICAL_OFFSET,
@@ -49,7 +52,7 @@ export default function Ukelele({
           cx={fretWidth / 2 + fretWidth * (finger.fret - 1) + HEAD_STOCK_OFFSET}
           cy={stringYPosition[string - 1]}
           r={circleRadius}
-          fill="black"
+          fill={color}
         />
       );
     });
@@ -65,16 +68,17 @@ export default function Ukelele({
     >
       <title>{chord} chord diagram</title>
       {showLabel && (
-        <text x="20" y="30">
+        <text x="20" y="30" fill={color}>
           {chord}
         </text>
       )}
       <UkeNut
         stringYPosition={stringYPosition[0]}
         stringHeight={stringHeight}
+        color={color}
       />
-      <UkeStrings stringYPosition={stringYPosition} width={width} />
-      <UkeFrets fretXPosition={fretXPosition} stringHeight={stringHeight} />
+      <UkeStrings stringYPosition={stringYPosition} width={width} color={color} />
+      <UkeFrets fretXPosition={fretXPosition} stringHeight={stringHeight} color={color} />
       {circleComponents}
     </svg>
   );
