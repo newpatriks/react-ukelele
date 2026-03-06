@@ -3,9 +3,10 @@ import { VERTICAL_OFFSET } from "./constants/ukelele-chords";
 type Props = {
   fretXPosition: number[];
   stringHeight: number;
+  color: string;
 };
 
-export default function UkeFrets({ fretXPosition, stringHeight }: Props) {
+export default function UkeFrets({ fretXPosition, stringHeight, color }: Props) {
   return (
     <g>
       <line
@@ -14,7 +15,7 @@ export default function UkeFrets({ fretXPosition, stringHeight }: Props) {
         y1={VERTICAL_OFFSET}
         x2={fretXPosition[0]}
         y2={stringHeight + VERTICAL_OFFSET}
-        stroke="black"
+        stroke={color}
         strokeWidth={0.5}
       />
       <line
@@ -23,7 +24,7 @@ export default function UkeFrets({ fretXPosition, stringHeight }: Props) {
         y1={VERTICAL_OFFSET}
         x2={fretXPosition[1]}
         y2={stringHeight + VERTICAL_OFFSET}
-        stroke="black"
+        stroke={color}
         strokeWidth={0.5}
       />
       <line
@@ -32,7 +33,7 @@ export default function UkeFrets({ fretXPosition, stringHeight }: Props) {
         y1={VERTICAL_OFFSET}
         x2={fretXPosition[2]}
         y2={stringHeight + VERTICAL_OFFSET}
-        stroke="black"
+        stroke={color}
         strokeWidth={0.5}
       />
       <line
@@ -41,7 +42,7 @@ export default function UkeFrets({ fretXPosition, stringHeight }: Props) {
         y1={VERTICAL_OFFSET}
         x2={fretXPosition[3]}
         y2={stringHeight + VERTICAL_OFFSET}
-        stroke="black"
+        stroke={color}
         strokeWidth={0.5}
       />
     </g>

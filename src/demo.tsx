@@ -19,6 +19,7 @@ function Demo() {
       <p style={{ color: '#666', marginTop: 0 }}>
         All {CHORDS.length} built-in chord diagrams
       </p>
+      <h2>Light mode</h2>
       <div
         style={{
           display: 'flex',
@@ -37,6 +38,29 @@ function Demo() {
             }}
           >
             <Ukelele chord={chord} width={150} height={150} />
+          </div>
+        ))}
+      </div>
+      <h2 style={{ marginTop: '2rem' }}>Dark mode</h2>
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: '1rem',
+        }}
+      >
+        {CHORDS.map((chord) => (
+          <div
+            key={`dark-${chord}`}
+            style={{
+              border: '1px solid #333',
+              borderRadius: '8px',
+              padding: '0.5rem',
+              textAlign: 'center',
+              backgroundColor: '#1a1a1a',
+            }}
+          >
+            <Ukelele chord={chord} width={150} height={150} darkMode />
           </div>
         ))}
       </div>

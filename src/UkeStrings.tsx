@@ -3,9 +3,10 @@ import { HEAD_STOCK_OFFSET } from "./constants/ukelele-chords";
 type Props = {
   stringYPosition: number[];
   width: number;
+  color: string;
 };
 
-export default function UkeStrings({ stringYPosition, width }: Props) {
+export default function UkeStrings({ stringYPosition, width, color }: Props) {
   return (
     <g>
       <line
@@ -14,7 +15,7 @@ export default function UkeStrings({ stringYPosition, width }: Props) {
         y1={stringYPosition[0]}
         x2={width}
         y2={stringYPosition[0]}
-        stroke="black"
+        stroke={color}
         strokeWidth={1}
       />
       <line
@@ -23,7 +24,7 @@ export default function UkeStrings({ stringYPosition, width }: Props) {
         y1={stringYPosition[1]}
         x2={width}
         y2={stringYPosition[1]}
-        stroke="black"
+        stroke={color}
         strokeWidth={1}
       />
       <line
@@ -32,7 +33,7 @@ export default function UkeStrings({ stringYPosition, width }: Props) {
         y1={stringYPosition[2]}
         x2={width}
         y2={stringYPosition[2]}
-        stroke="black"
+        stroke={color}
         strokeWidth={1}
       />
       <line
@@ -41,7 +42,7 @@ export default function UkeStrings({ stringYPosition, width }: Props) {
         y1={stringYPosition[3]}
         x2={width}
         y2={stringYPosition[3]}
-        stroke="black"
+        stroke={color}
         strokeWidth={1}
       />
     </g>
